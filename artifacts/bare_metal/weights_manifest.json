@@ -1,0 +1,296 @@
+[
+  {
+    "layer_name": "stem.0.weight",
+    "shape": [
+      32,
+      3,
+      3,
+      3
+    ],
+    "num_elements": 864,
+    "byte_offset": 0,
+    "byte_size": 3456
+  },
+  {
+    "layer_name": "stem.1.weight",
+    "shape": [
+      32
+    ],
+    "num_elements": 32,
+    "byte_offset": 3456,
+    "byte_size": 128
+  },
+  {
+    "layer_name": "stem.1.bias",
+    "shape": [
+      32
+    ],
+    "num_elements": 32,
+    "byte_offset": 3584,
+    "byte_size": 128
+  },
+  {
+    "layer_name": "stem.1.running_mean",
+    "shape": [
+      32
+    ],
+    "num_elements": 32,
+    "byte_offset": 3712,
+    "byte_size": 128
+  },
+  {
+    "layer_name": "stem.1.running_var",
+    "shape": [
+      32
+    ],
+    "num_elements": 32,
+    "byte_offset": 3840,
+    "byte_size": 128
+  },
+  {
+    "layer_name": "stem.1.num_batches_tracked",
+    "shape": [],
+    "num_elements": 1,
+    "byte_offset": 3968,
+    "byte_size": 4
+  },
+  {
+    "layer_name": "downsample1.0.weight",
+    "shape": [
+      64,
+      32,
+      3,
+      3
+    ],
+    "num_elements": 18432,
+    "byte_offset": 3972,
+    "byte_size": 73728
+  },
+  {
+    "layer_name": "downsample1.1.weight",
+    "shape": [
+      64
+    ],
+    "num_elements": 64,
+    "byte_offset": 77700,
+    "byte_size": 256
+  },
+  {
+    "layer_name": "downsample1.1.bias",
+    "shape": [
+      64
+    ],
+    "num_elements": 64,
+    "byte_offset": 77956,
+    "byte_size": 256
+  },
+  {
+    "layer_name": "downsample1.1.running_mean",
+    "shape": [
+      64
+    ],
+    "num_elements": 64,
+    "byte_offset": 78212,
+    "byte_size": 256
+  },
+  {
+    "layer_name": "downsample1.1.running_var",
+    "shape": [
+      64
+    ],
+    "num_elements": 64,
+    "byte_offset": 78468,
+    "byte_size": 256
+  },
+  {
+    "layer_name": "downsample1.1.num_batches_tracked",
+    "shape": [],
+    "num_elements": 1,
+    "byte_offset": 78724,
+    "byte_size": 4
+  },
+  {
+    "layer_name": "res_block.conv1.weight",
+    "shape": [
+      64,
+      64,
+      3,
+      3
+    ],
+    "num_elements": 36864,
+    "byte_offset": 78728,
+    "byte_size": 147456
+  },
+  {
+    "layer_name": "res_block.bn1.weight",
+    "shape": [
+      64
+    ],
+    "num_elements": 64,
+    "byte_offset": 226184,
+    "byte_size": 256
+  },
+  {
+    "layer_name": "res_block.bn1.bias",
+    "shape": [
+      64
+    ],
+    "num_elements": 64,
+    "byte_offset": 226440,
+    "byte_size": 256
+  },
+  {
+    "layer_name": "res_block.bn1.running_mean",
+    "shape": [
+      64
+    ],
+    "num_elements": 64,
+    "byte_offset": 226696,
+    "byte_size": 256
+  },
+  {
+    "layer_name": "res_block.bn1.running_var",
+    "shape": [
+      64
+    ],
+    "num_elements": 64,
+    "byte_offset": 226952,
+    "byte_size": 256
+  },
+  {
+    "layer_name": "res_block.bn1.num_batches_tracked",
+    "shape": [],
+    "num_elements": 1,
+    "byte_offset": 227208,
+    "byte_size": 4
+  },
+  {
+    "layer_name": "res_block.conv2.weight",
+    "shape": [
+      64,
+      64,
+      3,
+      3
+    ],
+    "num_elements": 36864,
+    "byte_offset": 227212,
+    "byte_size": 147456
+  },
+  {
+    "layer_name": "res_block.bn2.weight",
+    "shape": [
+      64
+    ],
+    "num_elements": 64,
+    "byte_offset": 374668,
+    "byte_size": 256
+  },
+  {
+    "layer_name": "res_block.bn2.bias",
+    "shape": [
+      64
+    ],
+    "num_elements": 64,
+    "byte_offset": 374924,
+    "byte_size": 256
+  },
+  {
+    "layer_name": "res_block.bn2.running_mean",
+    "shape": [
+      64
+    ],
+    "num_elements": 64,
+    "byte_offset": 375180,
+    "byte_size": 256
+  },
+  {
+    "layer_name": "res_block.bn2.running_var",
+    "shape": [
+      64
+    ],
+    "num_elements": 64,
+    "byte_offset": 375436,
+    "byte_size": 256
+  },
+  {
+    "layer_name": "res_block.bn2.num_batches_tracked",
+    "shape": [],
+    "num_elements": 1,
+    "byte_offset": 375692,
+    "byte_size": 4
+  },
+  {
+    "layer_name": "downsample2.0.weight",
+    "shape": [
+      128,
+      64,
+      3,
+      3
+    ],
+    "num_elements": 73728,
+    "byte_offset": 375696,
+    "byte_size": 294912
+  },
+  {
+    "layer_name": "downsample2.1.weight",
+    "shape": [
+      128
+    ],
+    "num_elements": 128,
+    "byte_offset": 670608,
+    "byte_size": 512
+  },
+  {
+    "layer_name": "downsample2.1.bias",
+    "shape": [
+      128
+    ],
+    "num_elements": 128,
+    "byte_offset": 671120,
+    "byte_size": 512
+  },
+  {
+    "layer_name": "downsample2.1.running_mean",
+    "shape": [
+      128
+    ],
+    "num_elements": 128,
+    "byte_offset": 671632,
+    "byte_size": 512
+  },
+  {
+    "layer_name": "downsample2.1.running_var",
+    "shape": [
+      128
+    ],
+    "num_elements": 128,
+    "byte_offset": 672144,
+    "byte_size": 512
+  },
+  {
+    "layer_name": "downsample2.1.num_batches_tracked",
+    "shape": [],
+    "num_elements": 1,
+    "byte_offset": 672656,
+    "byte_size": 4
+  },
+  {
+    "layer_name": "classifier.weight",
+    "shape": [
+      10,
+      128
+    ],
+    "num_elements": 1280,
+    "byte_offset": 672660,
+    "byte_size": 5120
+  },
+  {
+    "layer_name": "classifier.bias",
+    "shape": [
+      10
+    ],
+    "num_elements": 10,
+    "byte_offset": 677780,
+    "byte_size": 40
+  }
+]

@@ -1,0 +1,418 @@
+{
+    "model_name": "MiniResNet-CIFAR10",
+    "precision": "FP32",
+    "input_dimensions": [
+        1,
+        3,
+        32,
+        32
+    ],
+    "layers": [
+        {
+            "layer_name": "stem_conv",
+            "layer_type": "Conv2D",
+            "input_dim": [
+                1,
+                3,
+                32,
+                32
+            ],
+            "output_dim": [
+                1,
+                32,
+                32,
+                32
+            ],
+            "attributes": {
+                "kernel_size": 3,
+                "stride": 1,
+                "padding": 1
+            },
+            "weight_file": "data/weights/stem_conv_weight.bin",
+            "bias_file": null,
+            "reference_file": "data/reference/ref_stem_conv.bin"
+        },
+        {
+            "layer_name": "stem_bn",
+            "layer_type": "BatchNorm",
+            "input_dim": [
+                1,
+                32,
+                32,
+                32
+            ],
+            "output_dim": [
+                1,
+                32,
+                32,
+                32
+            ],
+            "attributes": {
+                "num_features": 32,
+                "eps": 1e-05
+            },
+            "weight_file": "data/weights/stem_bn_weight.bin",
+            "bias_file": "data/weights/stem_bn_bias.bin",
+            "mean_file": "data/weights/stem_bn_mean.bin",
+            "var_file": "data/weights/stem_bn_var.bin",
+            "reference_file": "data/reference/ref_stem_bn.bin"
+        },
+        {
+            "layer_name": "stem_relu",
+            "layer_type": "ReLU",
+            "input_dim": [
+                1,
+                32,
+                32,
+                32
+            ],
+            "output_dim": [
+                1,
+                32,
+                32,
+                32
+            ],
+            "attributes": {},
+            "reference_file": "data/reference/ref_stem_out.bin"
+        },
+        {
+            "layer_name": "ds1_conv",
+            "layer_type": "Conv2D",
+            "input_dim": [
+                1,
+                32,
+                32,
+                32
+            ],
+            "output_dim": [
+                1,
+                64,
+                16,
+                16
+            ],
+            "attributes": {
+                "kernel_size": 3,
+                "stride": 2,
+                "padding": 1
+            },
+            "weight_file": "data/weights/ds1_conv_weight.bin",
+            "bias_file": null,
+            "reference_file": "data/reference/ref_ds1_conv.bin"
+        },
+        {
+            "layer_name": "ds1_bn",
+            "layer_type": "BatchNorm",
+            "input_dim": [
+                1,
+                64,
+                16,
+                16
+            ],
+            "output_dim": [
+                1,
+                64,
+                16,
+                16
+            ],
+            "attributes": {
+                "num_features": 64,
+                "eps": 1e-05
+            },
+            "weight_file": "data/weights/ds1_bn_weight.bin",
+            "bias_file": "data/weights/ds1_bn_bias.bin",
+            "mean_file": "data/weights/ds1_bn_mean.bin",
+            "var_file": "data/weights/ds1_bn_var.bin",
+            "reference_file": "data/reference/ref_ds1_bn.bin"
+        },
+        {
+            "layer_name": "ds1_relu",
+            "layer_type": "ReLU",
+            "input_dim": [
+                1,
+                64,
+                16,
+                16
+            ],
+            "output_dim": [
+                1,
+                64,
+                16,
+                16
+            ],
+            "attributes": {},
+            "reference_file": "data/reference/ref_ds1_out.bin"
+        },
+        {
+            "layer_name": "res_conv1",
+            "layer_type": "Conv2D",
+            "input_dim": [
+                1,
+                64,
+                16,
+                16
+            ],
+            "output_dim": [
+                1,
+                64,
+                16,
+                16
+            ],
+            "attributes": {
+                "kernel_size": 3,
+                "stride": 1,
+                "padding": 1
+            },
+            "weight_file": "data/weights/res_conv1_weight.bin",
+            "bias_file": null,
+            "reference_file": "data/reference/ref_res_conv1.bin"
+        },
+        {
+            "layer_name": "res_bn1",
+            "layer_type": "BatchNorm",
+            "input_dim": [
+                1,
+                64,
+                16,
+                16
+            ],
+            "output_dim": [
+                1,
+                64,
+                16,
+                16
+            ],
+            "attributes": {
+                "num_features": 64,
+                "eps": 1e-05
+            },
+            "weight_file": "data/weights/res_bn1_weight.bin",
+            "bias_file": "data/weights/res_bn1_bias.bin",
+            "mean_file": "data/weights/res_bn1_mean.bin",
+            "var_file": "data/weights/res_bn1_var.bin",
+            "reference_file": "data/reference/ref_res_bn1.bin"
+        },
+        {
+            "layer_name": "res_relu1",
+            "layer_type": "ReLU",
+            "input_dim": [
+                1,
+                64,
+                16,
+                16
+            ],
+            "output_dim": [
+                1,
+                64,
+                16,
+                16
+            ],
+            "attributes": {},
+            "reference_file": "data/reference/ref_res_relu1.bin"
+        },
+        {
+            "layer_name": "res_conv2",
+            "layer_type": "Conv2D",
+            "input_dim": [
+                1,
+                64,
+                16,
+                16
+            ],
+            "output_dim": [
+                1,
+                64,
+                16,
+                16
+            ],
+            "attributes": {
+                "kernel_size": 3,
+                "stride": 1,
+                "padding": 1
+            },
+            "weight_file": "data/weights/res_conv2_weight.bin",
+            "bias_file": null,
+            "reference_file": "data/reference/ref_res_conv2.bin"
+        },
+        {
+            "layer_name": "res_bn2",
+            "layer_type": "BatchNorm",
+            "input_dim": [
+                1,
+                64,
+                16,
+                16
+            ],
+            "output_dim": [
+                1,
+                64,
+                16,
+                16
+            ],
+            "attributes": {
+                "num_features": 64,
+                "eps": 1e-05
+            },
+            "weight_file": "data/weights/res_bn2_weight.bin",
+            "bias_file": "data/weights/res_bn2_bias.bin",
+            "mean_file": "data/weights/res_bn2_mean.bin",
+            "var_file": "data/weights/res_bn2_var.bin",
+            "reference_file": "data/reference/ref_res_bn2.bin"
+        },
+        {
+            "layer_name": "res_add",
+            "layer_type": "ResidualAdd",
+            "input_dim": [
+                1,
+                64,
+                16,
+                16
+            ],
+            "output_dim": [
+                1,
+                64,
+                16,
+                16
+            ],
+            "attributes": {
+                "shortcut_source": "ds1_relu"
+            },
+            "reference_file": "data/reference/ref_res_add.bin"
+        },
+        {
+            "layer_name": "res_relu2",
+            "layer_type": "ReLU",
+            "input_dim": [
+                1,
+                64,
+                16,
+                16
+            ],
+            "output_dim": [
+                1,
+                64,
+                16,
+                16
+            ],
+            "attributes": {},
+            "reference_file": "data/reference/ref_res_out.bin"
+        },
+        {
+            "layer_name": "ds2_conv",
+            "layer_type": "Conv2D",
+            "input_dim": [
+                1,
+                64,
+                16,
+                16
+            ],
+            "output_dim": [
+                1,
+                128,
+                8,
+                8
+            ],
+            "attributes": {
+                "kernel_size": 3,
+                "stride": 2,
+                "padding": 1
+            },
+            "weight_file": "data/weights/ds2_conv_weight.bin",
+            "bias_file": null,
+            "reference_file": "data/reference/ref_ds2_conv.bin"
+        },
+        {
+            "layer_name": "ds2_bn",
+            "layer_type": "BatchNorm",
+            "input_dim": [
+                1,
+                128,
+                8,
+                8
+            ],
+            "output_dim": [
+                1,
+                128,
+                8,
+                8
+            ],
+            "attributes": {
+                "num_features": 128,
+                "eps": 1e-05
+            },
+            "weight_file": "data/weights/ds2_bn_weight.bin",
+            "bias_file": "data/weights/ds2_bn_bias.bin",
+            "mean_file": "data/weights/ds2_bn_mean.bin",
+            "var_file": "data/weights/ds2_bn_var.bin",
+            "reference_file": "data/reference/ref_ds2_bn.bin"
+        },
+        {
+            "layer_name": "ds2_relu",
+            "layer_type": "ReLU",
+            "input_dim": [
+                1,
+                128,
+                8,
+                8
+            ],
+            "output_dim": [
+                1,
+                128,
+                8,
+                8
+            ],
+            "attributes": {},
+            "reference_file": "data/reference/ref_ds2_out.bin"
+        },
+        {
+            "layer_name": "gap",
+            "layer_type": "GlobalAveragePool",
+            "input_dim": [
+                1,
+                128,
+                8,
+                8
+            ],
+            "output_dim": [
+                1,
+                128,
+                1,
+                1
+            ],
+            "attributes": {},
+            "reference_file": "data/reference/ref_gap_out.bin"
+        },
+        {
+            "layer_name": "classifier",
+            "layer_type": "FullyConnected",
+            "input_dim": [
+                1,
+                128
+            ],
+            "output_dim": [
+                1,
+                10
+            ],
+            "attributes": {
+                "in_features": 128,
+                "out_features": 10
+            },
+            "weight_file": "data/weights/classifier_weight.bin",
+            "bias_file": "data/weights/classifier_bias.bin",
+            "reference_file": "data/reference/ref_logits.bin"
+        },
+        {
+            "layer_name": "softmax",
+            "layer_type": "Softmax",
+            "input_dim": [
+                1,
+                10
+            ],
+            "output_dim": [
+                1,
+                10
+            ],
+            "attributes": {},
+            "reference_file": "data/reference/ref_probabilities.bin"
+        }
+    ]
+}

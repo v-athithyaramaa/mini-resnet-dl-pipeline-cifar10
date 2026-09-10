@@ -1,0 +1,14 @@
+__pycache__/
+*.py[cod]
+
+# Downloaded CIFAR-10 dataset
+data/*
+!data/.gitkeep
+
+# Local experiment and runtime files
+.venv/
+venv/
+.env
+.streamlit/secrets.toml
+*.log
+

@@ -13,17 +13,41 @@ A compact deep-learning project for training, evaluating, exporting, quantizing,
 
 The project results and model structure are visible here before the detailed setup and implementation notes.
 
-| Mini-ResNet architecture | Experiment convergence |
-| --- | --- |
-| ![Mini-ResNet neural-network diagram](artifacts/neural%20net/neural%20net%20final.png) | ![Accuracy convergence matrix for the four experiments](artifacts/report_figures/fig1_convergence_matrix.png) |
+### Mini-ResNet architecture
 
-| Champion model curves | Exported ONNX graph |
-| --- | --- |
-| ![Champion model loss and accuracy curves](artifacts/report_figures/fig2_champion_curves.png) | ![ONNX model graph](artifacts/report_figures/netron_graph.png) |
+<p align="center">
+  <img src="artifacts/neural%20net/neural%20net%20final.png" alt="Mini-ResNet neural-network diagram" width="1000">
+</p>
 
-| Accuracy comparison | Champion training curves |
-| --- | --- |
-| ![Training and validation accuracy curves](artifacts/plots/hyperparameter_accuracy_curves.png) | ![Champion model training curves](artifacts/plots/champion_model_curves.png) |
+### Experiment convergence
+
+<p align="center">
+  <img src="artifacts/report_figures/fig1_convergence_matrix.png" alt="Accuracy convergence matrix for the four experiments" width="1000">
+</p>
+
+### Champion model curves
+
+<p align="center">
+  <img src="artifacts/report_figures/fig2_champion_curves.png" alt="Champion model loss and accuracy curves" width="1000">
+</p>
+
+### Exported ONNX graph
+
+<p align="center">
+  <img src="artifacts/report_figures/netron_graph.png" alt="ONNX model graph" width="1000">
+</p>
+
+### Accuracy comparison
+
+<p align="center">
+  <img src="artifacts/plots/hyperparameter_accuracy_curves.png" alt="Training and validation accuracy curves" width="1000">
+</p>
+
+### Champion training curves
+
+<p align="center">
+  <img src="artifacts/plots/champion_model_curves.png" alt="Champion model training curves" width="1000">
+</p>
 
 ## Results at a Glance
 

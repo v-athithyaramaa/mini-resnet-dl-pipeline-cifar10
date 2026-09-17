@@ -9,6 +9,22 @@ A compact deep-learning project for training, evaluating, exporting, quantizing,
 - A Streamlit application backed by ONNX Runtime.
 - Bare-metal export assets for a C++ inference implementation, including raw weights, reference tensors, and a model manifest.
 
+## Visual Snapshot
+
+The project results and model structure are visible here before the detailed setup and implementation notes.
+
+| Mini-ResNet architecture | Experiment convergence |
+| --- | --- |
+| ![Mini-ResNet neural-network diagram](artifacts/neural%20net/neural%20net%20final.png) | ![Accuracy convergence matrix for the four experiments](artifacts/report_figures/fig1_convergence_matrix.png) |
+
+| Champion model curves | Exported ONNX graph |
+| --- | --- |
+| ![Champion model loss and accuracy curves](artifacts/report_figures/fig2_champion_curves.png) | ![ONNX model graph](artifacts/report_figures/netron_graph.png) |
+
+| Accuracy comparison | Champion training curves |
+| --- | --- |
+| ![Training and validation accuracy curves](artifacts/plots/hyperparameter_accuracy_curves.png) | ![Champion model training curves](artifacts/plots/champion_model_curves.png) |
+
 ## Results at a Glance
 
 The strongest recorded experiment is the SGD + momentum configuration:
@@ -201,34 +217,6 @@ std  = (0.2470, 0.2435, 0.2616)
 ```
 
 Validation and inference omit augmentation and retain only tensor conversion and normalization. The Streamlit app performs the equivalent preprocessing after resizing an uploaded image.
-
-## Visuals and Diagrams
-
-All image assets currently stored under `artifacts/` are shown below.
-
-### Neural-network diagram
-
-![Mini-ResNet neural-network diagram](artifacts/neural%20net/neural%20net%20final.png)
-
-### Hyperparameter convergence matrix
-
-![Accuracy convergence matrix for the four experiments](artifacts/report_figures/fig1_convergence_matrix.png)
-
-### Champion model convergence
-
-![Champion model loss and accuracy curves](artifacts/report_figures/fig2_champion_curves.png)
-
-### Netron model graph
-
-![ONNX model graph](artifacts/report_figures/netron_graph.png)
-
-### Accuracy curves
-
-![Training and validation accuracy curves](artifacts/plots/hyperparameter_accuracy_curves.png)
-
-### Champion training curves
-
-![Champion model training curves](artifacts/plots/champion_model_curves.png)
 
 ## Reproducibility Notes
 
